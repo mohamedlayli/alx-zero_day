@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * convertToDecimal - Convert base 8 and 16 to base 10
+ * con2dec - Convert base 8 and 16 to base 10
  *
  * Return: Decimal
  */
-long long convertToDecimal(int Number, int base)
+long long con2dec(int Number, int base)
 {
     int decimalNumber = 0, i = 0;
 
