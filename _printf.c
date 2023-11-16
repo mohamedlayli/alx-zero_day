@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 			}
 			else if (format[i + 1] == 's')
 			{
-				count += print_string(va_arg(data, char *));
+				count += prt_str(va_arg(data, char *));
 			}
 			else if (format[i + 1] == '%')
 			{
@@ -32,15 +32,15 @@ int _printf(const char *format, ...)
 			}
 			else if (format[i + 1] == 'd' || format[i + 1] == 'i')
 			{
-				count += print_decimal(va_arg(data, int));
+				count += prt_dec(va_arg(data, int));
 			}
 			else if (format[i + 1] == 'b')
 			{
-				count += print_binary(va_arg(data, int));
+				count += prt_bry(va_arg(data, int));
 			}
 			else if (format[i + 1] == 'u')
 			{
-				count += print_unsigned(va_arg(data, unsigned int));
+				count += prt_uns(va_arg(data, unsigned int));
 			}
 
 			i += 2;
