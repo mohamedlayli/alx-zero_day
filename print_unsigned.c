@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_unsigned(unsigned int value){
+int prt_uns(unsigned int value){
    int count = 0;
   
     /* First remove the last digit of number and print 
