@@ -8,7 +8,7 @@ int prt_uns(unsigned int value){
     the last digit
  */
     if (value/10)
-        count += print_decimal(value/10);
+        count += prt_dec(value/10);
   
     count += _putchar(value%10 + '0');
 
